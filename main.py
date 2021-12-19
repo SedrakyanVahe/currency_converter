@@ -12,7 +12,7 @@ from matplotlib.widgets import Slider
 ##-------------------- get api url --------------------##
 try:
   base = input("Base currency: ")
-  url = "https://api.fastforex.io/fetch-all?from="+base+"&api_key=c3462e35b9-06f8cc140b-r45w0n"
+  url = "https://api.fastforex.io/fetch-all?from="+base+"&api_key=<YOUR API KEY>"
   response = requests.request("GET", url)
   json_response = response.json()
 
@@ -79,4 +79,3 @@ spos.on_changed(update)
 
 plt.show()
 
-# try it on your local pc, and open comments with *
